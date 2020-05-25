@@ -50,3 +50,7 @@ export interface IProjeto {
   data_inicio: string | null;
   previsao_fim: string | null;
 }
+
+export interface IMenuReducer {
+  menu_visibility: boolean;
+}

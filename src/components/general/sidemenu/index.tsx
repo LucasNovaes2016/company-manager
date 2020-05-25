@@ -1,9 +1,18 @@
 import React from "react";
 import { logo } from "../../../core/data";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function SideMenu(): React.ReactElement {
+  const menu_visibility = useSelector(
+    (state: any) => state.menu.menu_visibility
+  );
+
   return (
-    <div className="vertical-nav bg-white" id="sidebar">
+    <div
+      className={`vertical-nav bg-white ${menu_visibility ? "" : "active"}`}
+      id="sidebar"
+    >
       <div className="py-4 px-3 mb-4 menu-header">
         <div className="media d-flex align-items-center">
           <img
@@ -36,46 +45,49 @@ export default function SideMenu(): React.ReactElement {
 
       <ul className="nav flex-column mb-0">
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic bg-light">
+          <Link to="/" className="nav-link text-dark font-italic">
             <i className="fas fa-info-circle mr-3 text-secondary fa-fw"></i>
             Introdução
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic">
+          <Link to="/funcionarios" className="nav-link text-dark font-italic">
             <i className="fas fa-users mr-3 text-secondary fa-fw"></i>
             Funcionários
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic">
+          <Link
+            to="/modelos_contratuais"
+            className="nav-link text-dark font-italic"
+          >
             <i className="fas fa-file-contract mr-3 text-secondary fa-fw"></i>
             Modelos Contratuais
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic">
+          <Link to="/cargos" className="nav-link text-dark font-italic">
             <i className="fas fa-clipboard-list mr-3 text-secondary fa-fw"></i>
             Cargos
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic">
+          <Link to="/departamentos" className="nav-link text-dark font-italic">
             <i className="fas fa-bezier-curve mr-3 text-secondary fa-fw"></i>
             Departamentos
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic">
+          <Link to="/projetos" className="nav-link text-dark font-italic">
             <i className="fas fa-laptop-code mr-3 text-secondary fa-fw"></i>
             Projetos
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-dark font-italic">
+          <Link to="/horarios" className="nav-link text-dark font-italic">
             <i className="fas fa-clock mr-3 text-secondary fa-fw"></i>
             Horários
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

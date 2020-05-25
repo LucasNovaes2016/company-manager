@@ -1,1 +1,13 @@
 export { default as Introducao } from "./introducao";
+export { default as CargosConsulta } from "./cargos/pages/consulta";
+export { default as CargosCadastro } from "./cargos/pages/cadastro";
+export { default as DepartamentosConsulta } from "./departamentos/pages/consulta";
+export { default as DepartamentosCadastro } from "./departamentos/pages/cadastro";
+export { default as FuncionariosConsulta } from "./funcionarios/pages/consulta";
+export { default as FuncionariosCadastro } from "./funcionarios/pages/cadastro";
+export { default as ModelosContratuaisConsulta } from "./modeloscontratuais/pages/consulta";
+export { default as ModelosContratuaisCadastro } from "./modeloscontratuais/pages/cadastro";
+export { default as ProjetosConsulta } from "./projetos/pages/consulta";
+export { default as ProjetosCadastro } from "./projetos/pages/cadastro";
+export { default as HorariosConsulta } from "./horarios/pages/consulta";
+export { default as HorariosCadastro } from "./horarios/pages/cadastro";
