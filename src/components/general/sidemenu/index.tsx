@@ -10,10 +10,10 @@ export default function SideMenu(): React.ReactElement {
 
   return (
     <div
-      className={`vertical-nav bg-white ${menu_visibility ? "" : "active"}`}
+      className={`side-menu bg-white ${menu_visibility ? "" : "active"}`}
       id="sidebar"
     >
-      <div className="py-4 px-3 mb-4 menu-header">
+      <div className="py-4 px-3 mb-4 side-menu-header">
         <div className="media d-flex align-items-center">
           <img
             src="http://getdrawings.com/free-icon-bw/generic-user-icon-9.png"

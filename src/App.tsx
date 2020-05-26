@@ -23,7 +23,7 @@ function App() {
     <Router>
       <SideMenu />
       <div
-        className={`page-content p-5 ${menu_visibility ? "" : "active"}`}
+        className={`menu-item-content p-5 ${menu_visibility ? "" : "active"}`}
         id="content"
       >
         <ToggleMenu />

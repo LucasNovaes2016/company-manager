@@ -1,4 +1,6 @@
-.vertical-nav {
+/* CSS para Menu e conteudo da página */
+
+.side-menu {
   min-width: 17rem;
   width: 17rem;
   height: 100vh;
@@ -9,17 +11,17 @@
   transition: all 0.4s;
 }
 
-.menu-header {
+.side-menu-header {
   background-color: #f4f4f4;
 }
 
-.page-content {
+.menu-item-content {
   width: calc(100% - 17rem);
   margin-left: 17rem;
   transition: all 0.4s;
 }
 
-/* for toggle behavior */
+/* CSS para para esconder/mostrar menu */
 
 #sidebar.active {
   margin-left: -17rem;
@@ -29,6 +31,8 @@
   width: 100%;
   margin: 0;
 }
+
+/* Responsividade */
 
 @media (max-width: 768px) {
   #sidebar {
@@ -46,6 +50,8 @@
     width: calc(100% - 17rem);
   }
 }
+
+/* Outros */
 
 body {
   min-height: 100vh;
