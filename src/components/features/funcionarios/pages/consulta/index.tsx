@@ -7,49 +7,43 @@ export default function FuncionariosConsulta(): React.ReactElement {
       <h1 className="display-4">Funcionários</h1>
       <hr className="my-2" />
       <Grid
-        style={{ height: "400px" }}
+        style={{ height: "400px", marginTop: "20px" }}
         data={[
           {
-            ProductID: 1,
-            ProductName: "Chai",
-            SupplierID: 1,
-            CategoryID: 1,
-            QuantityPerUnit: "10 boxes x 20 bags",
-            UnitPrice: 18.0,
-            UnitsInStock: 39,
-            UnitsOnOrder: 0,
-            ReorderLevel: 10,
-            Discontinued: false,
-            Category: {
-              CategoryID: 1,
-              CategoryName: "Beverages",
-              Description: "Soft drinks, coffees, teas, beers, and ales",
-            },
+            id: 1,
+            nome_completo: "Rafael Gonzales",
+            data_nascimento: "01/01/1990",
+            data_admissao: "18/05/2020",
+            cpf: "642.755.484-26",
+            tipo_sanguineo: "A+",
+            cargo: 1,
+            departamento: 1,
+            faixa_horario: 1,
+            mentor: null,
+            mentorado: 2,
+            modelo_contrato: 1,
           },
           {
-            ProductID: 2,
-            ProductName: "Chang",
-            SupplierID: 1,
-            CategoryID: 1,
-            QuantityPerUnit: "24 - 12 oz bottles",
-            UnitPrice: 19.0,
-            UnitsInStock: 17,
-            UnitsOnOrder: 40,
-            ReorderLevel: 25,
-            Discontinued: false,
-            Category: {
-              CategoryID: 1,
-              CategoryName: "Beverages",
-              Description: "Soft drinks, coffees, teas, beers, and ales",
-            },
+            id: 2,
+            nome_completo: "Josenaldo dos Santos",
+            data_nascimento: "01/01/1994",
+            data_admissao: "18/05/2020",
+            cpf: "731.822.455-76",
+            tipo_sanguineo: "O+",
+            cargo: 1,
+            departamento: 1,
+            faixa_horario: 1,
+            mentor: 1,
+            mentorado: null,
+            modelo_contrato: 1,
           },
         ]}
       >
-        <Column field="ProductID" title="ID" width="40px" />
-        <Column field="ProductName" title="Name" width="250px" />
-        <Column field="Category.CategoryName" title="CategoryName" />
-        <Column field="UnitPrice" title="Price" />
-        <Column field="UnitsInStock" title="In stock" />
+        <Column field="id" title="ID" width="80px" />
+        <Column field="nome_completo" title="Nome Completo" />
+        <Column field="departamento" title="Departamento" />
+        <Column field="cargo" title="Cargo" />
+        <Column field="modelo_contrato" title="Contrato" />
       </Grid>
     </>
   );
