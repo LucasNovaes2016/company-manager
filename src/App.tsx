@@ -16,15 +16,15 @@ import {
 import { useSelector } from "react-redux";
 
 function App() {
-  const menu_visibility = useSelector(
-    (state: any) => state.menu.menu_visibility
+  const visibilidade_menu = useSelector(
+    (state: any) => state.menu.visibilidade_menu
   );
 
   return (
     <Router>
       <SideMenu />
       <div
-        className={`menu-item-content p-5 ${menu_visibility ? "" : "active"}`}
+        className={`menu-item-content p-5 ${visibilidade_menu ? "" : "active"}`}
         id="content"
       >
         <ToggleMenu />

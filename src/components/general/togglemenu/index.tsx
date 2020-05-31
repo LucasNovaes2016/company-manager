@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { CHANGE_MENU_VISIBILITY } from "../../../core/redux/types";
+import { MUDAR_VISIBILIDADE_MENU } from "../../../core/redux/types";
 
 export default function ToggleMenu(): React.ReactElement {
   const [menuOpen, setMenuOpen] = React.useState(true);
@@ -9,7 +9,7 @@ export default function ToggleMenu(): React.ReactElement {
 
   const handleClick = () => {
     setMenuOpen(!menuOpen);
-    dispatch({ type: CHANGE_MENU_VISIBILITY, payload: !menuOpen });
+    dispatch({ type: MUDAR_VISIBILIDADE_MENU, payload: !menuOpen });
   };
 
   return (

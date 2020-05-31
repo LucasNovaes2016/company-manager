@@ -1,9 +1,9 @@
-import { CHANGE_MENU_VISIBILITY } from "../types";
+import { MUDAR_VISIBILIDADE_MENU } from "../types";
 
 // Chante Menu Visibility
-export const changeMenuVisibility = (menu_visibility: boolean) => {
+export const changeMenuVisibility = (visibilidade_menu: boolean) => {
   return {
-    type: CHANGE_MENU_VISIBILITY,
-    payload: menu_visibility,
+    type: MUDAR_VISIBILIDADE_MENU,
+    payload: visibilidade_menu,
   };
 };

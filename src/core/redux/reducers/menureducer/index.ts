@@ -1,16 +1,16 @@
-import { CHANGE_MENU_VISIBILITY } from "../../types";
+import { MUDAR_VISIBILIDADE_MENU } from "../../types";
 import { IMenuReducer } from "../../../interfaces";
 
-const initialState = {
-  menu_visibility: true,
+const initialState: IMenuReducer = {
+  visibilidade_menu: true,
 };
 
 export default (state = initialState, action: any) => {
   switch (action.type) {
-    case CHANGE_MENU_VISIBILITY:
+    case MUDAR_VISIBILIDADE_MENU:
       return {
         ...state,
-        menu_visibility: action.payload,
+        visibilidade_menu: action.payload,
       };
     default:
       return state;

@@ -52,5 +52,14 @@ export interface IProjeto {
 }
 
 export interface IMenuReducer {
-  menu_visibility: boolean;
+  visibilidade_menu: boolean;
+}
+
+export interface IEmpresaReducer {
+  funcionarios: IFuncionario[];
+  cargos: ICargo[];
+  departamentos: IDepartamento[];
+  faixas_horario: IFaixaHorario[];
+  modelos_contrato: IModeloContrato[];
+  projetos: IProjeto[];
 }

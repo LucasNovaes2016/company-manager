@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 export default function SideMenu(): React.ReactElement {
-  const menu_visibility = useSelector(
-    (state: any) => state.menu.menu_visibility
+  const visibilidade_menu = useSelector(
+    (state: any) => state.menu.visibilidade_menu
   );
 
   return (
     <div
-      className={`side-menu bg-white ${menu_visibility ? "" : "active"}`}
+      className={`side-menu bg-white ${visibilidade_menu ? "" : "active"}`}
       id="sidebar"
     >
       <div className="py-4 px-3 mb-4 side-menu-header">
