@@ -6,6 +6,7 @@ import {
   modelos_contrato,
   projetos,
 } from "../../../../core/data/initialstoredata";
+// import { RECEBER_FUNCIONARIOS_FORMATADO } from "../../types";
 import { IEmpresaReducer } from "../../../interfaces";
 
 const initialState: IEmpresaReducer = {
@@ -19,7 +20,8 @@ const initialState: IEmpresaReducer = {
 
 export default (state = initialState, action: any) => {
   switch (action.type) {
-    // case GET_EMPLPOYEES_FORMATTED:
+    // case RECEBER_FUNCIONARIOS_FORMATADO:
+    //   console.log("state = ", state);
     //   return {
     //     ...state,
     //   };
